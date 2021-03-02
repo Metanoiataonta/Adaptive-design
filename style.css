@@ -1,20 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: sans-serif;
 }
 
-header,
-.content,
-footer,
-.our-projects {
-    margin: 0 10%;
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.heading {
+    width: 510px;
+    font-size: 64px;
+    color: #1f3f68;
+}
+
+.header-par {
+    width: 425px;
 }
 
 .nav-list {
     list-style-type: none;
-}
-
-.nav-list-elem {
-    display: inline;
+    display: flex;
+    justify-content: space-between;
 }
 
 .paragraph {
@@ -23,9 +34,31 @@ footer,
     color: #1f3f68;
 }
 
-.heading {
-    font-size: 64px;
-    color: #1f3f68;
+.content-case {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-card {
+    width: 359px;
+}
+
+.footer-text {
+    width: 495px;
+}
+
+.footer-heading {
+    width: 340px;
+}
+
+.footer-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-list-li {
+    flex-grow: 1;
 }
 
 .contact-heading {
@@ -43,6 +76,11 @@ footer,
     font-size: 20px;
     line-height: 30px;
     color: #1f3f68;
+}
+
+.contact-content-wrapper {
+    display: flex;
+    justify-content: space-between;
 }
 
 .input {
@@ -64,12 +102,12 @@ footer,
     text-transform: uppercase;
 }
 
-.block-link {
-    display: block;
-    width: fit-content;
-}
-
 label {
     width: 200px;
     display: block;
+}
+
+.yandex-map {
+    width: 100%;
+    height: 400px;
 }

@@ -10,8 +10,8 @@
 
 <body>
 
-    <header>
-        <div class="header-content">
+    <div class="header">
+        <div class="header-wrapper container">
             <div class="menu">
                 <ul class="nav-list">
                     <li class="nav-list-elem"><a href="index.html">Main page</a></li>
@@ -24,88 +24,88 @@
                 </p>
             </div>
         </div>
-    </header>
+    </div>
 
 
 
-    <div class="content">
-        <div class="content-contacts">
-            <img src="./images/cover.jpg" alt="World and Peace">
-            <h4 class="title_2">Address</h4>
-            <p class="paragraph">Lorem, ipsum.</p>
-            <h4 class="title_2">Phone</h4>
-            <ul>
-                <li><a href="tel:+1(900)000-01-02">+1(900)000-01-02</a></li>
-                <li><a href="tel:+1(900)000-01-03">+1(900)000-01-03</a></li>
-            </ul>
-            <h4 class="title_2">Online service</h4>
-            <ul>
-                <li>
-                    <a href="index.html" class="block-link">Some site</a>
-                </li>
-                <li>
-                    <a href="mailto:example@mail.com" class="block-link">example@mail.com</a>
-                </li>
-            </ul>
+    <div class="contact-content container">
+        <div class="contact-content-wrapper">
+            <div class="content-contacts">
+                <img src="./images/cover.jpg" alt="World and Peace">
+                <h4 class="title_2">Address</h4>
+                <p class="paragraph">Lorem, ipsum.</p>
+                <h4 class="title_2">Phone</h4>
+                <ul>
+                    <li><a href="tel:+1(900)000-01-02">+1(900)000-01-02</a></li>
+                    <li><a href="tel:+1(900)000-01-03">+1(900)000-01-03</a></li>
+                </ul>
+                <h4 class="title_2">Online service</h4>
+                <ul>
+                    <li>
+                        <a href="index.html">Some site</a>
+                    </li>
+                    <li>
+                        <a href="mailto:example@mail.com">example@mail.com</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="contact-form">
+                <h4 class="title_2">Send us message</h4>
+                <form action="#">
+                    <div>
+                        <label for="name"> Full name</label>
+                        <input class="input" type="text" id="name">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input class="input" type="email" id="email">
+                    </div>
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea class="input" name="" id="message" cols="30" rows="10"></textarea>
+                    </div>
+                    <button class="button" type="submit">Submit</button>
+                </form>
+            </div>
         </div>
-
-
-        <div class="contact-form">
-            <h4 class="title_2">Send us message</h4>
-            <form action="#">
-                <div>
-                    <label for="name"> Full name</label>
-                    <input class="input" type="text" id="name">
-                </div>
-                <div>
-                    <label for="email">Email</label>
-                    <input class="input" type="email" id="email">
-                </div>
-                <div>
-                    <label for="message">Message</label>
-                    <textarea class="input" name="" id="message" cols="30" rows="10"></textarea>
-                </div>
-                <button class="button" type="submit">Submit</button>
-            </form>
-        </div>
-
 
         <div class="map">
             <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс.Карты</a><a href="https://yandex.ru/maps/?ll=-25.450696%2C37.371667&utm_medium=mapframe&utm_source=maps&z=8.04"
-                    style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUMySxshC" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                    style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс.Карты</a><iframe class="yandex-map" src="https://yandex.ru/map-widget/v1/-/CCUMySxshC" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
 
         </div>
     </div>
 
 
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-text">
-                <h3 class="title">Capter III</h3>
-                <p class="paragraph">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
+    <div class="footer">
+        <div class="footer-wrapper container">
+            <div class="footer-top">
+                <div class="footer-text">
+                    <h3 class="title footer-heading">Capter III</h3>
+                    <p class="paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <ul class="footer-list">
+                    <li class="footer-list-li">Lorem ipsum dolor sit amet.</li>
+                    <li class="footer-list-li"><a href="tel:+1(900)000-01-02">+1(900)000-01-02</a></li>
+                    <li class="footer-list-li"><a href="mailto:example@mail.com"> example@mail.com</a></li>
+                </ul>
+
+                <div class="copyright">
+                    <p class="paragraph">
+                        &copy; All right reserved
+                    </p>
+                </div>
             </div>
         </div>
-        <hr>
-
-
-        <div class="footer-contacts">
-            <ul>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li><a href="tel:+1(900)000-01-02">+1(900)000-01-02</a></li>
-                <li><a href="mailto:example@mail.com"> example@mail.com</a></li>
-            </ul>
-
-
-            <div class="copyright">
-                <p class="paragraph">
-                    &copy; All right reserved
-                </p>
-            </div>
-        </div>
-    </footer>
+    </div>
 </body>
 
 </html>
