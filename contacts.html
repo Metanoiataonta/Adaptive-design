@@ -6,84 +6,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Contacts</title>
-    <style>
-        .block-link {
-            display: block;
-            width: fit-content;
-        }
-        
-        label {
-            width: 200px;
-            display: block;
-        }
-    </style>
 </head>
 
 <body>
 
     <header>
-        <ul class="nav-list">
-            <li class="nav-list-elem"><a href="index.html">Main page</a></li>
-            <li class="nav-list-elem"><a href="contacts.html">Contacts</a></li>
-        </ul>
+        <div class="header-content">
+            <div class="menu">
+                <ul class="nav-list">
+                    <li class="nav-list-elem"><a href="index.html">Main page</a></li>
+                    <li class="nav-list-elem"><a href="contacts.html">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="header-contacts">
+                <h2 class="contact-heading">Contact us</h2>
+                <p class="paragraph">Lorem.
+                </p>
+            </div>
+        </div>
     </header>
-    <h2 class="contact-heading">Contact us</h2>
-    <p class="paragraph">Lorem.
-    </p>
-    <img src="./images/cover.jpg" alt="World and Peace">
-    <h4 class="title_2">Address</h4>
-    <p class="paragraph">Lorem, ipsum.</p>
-    <h4 class="title_2">Phone</h4>
-    <ul>
-        <li><a href="tel:+1(900)000-01-02">+1(900)000-01-02</a></li>
-        <li><a href="tel:+1(900)000-01-03">+1(900)000-01-03</a></li>
-    </ul>
-    <h4 class="title_2">Online service</h4>
-    <ul>
-        <li><a href="index.html" class="block-link">Some site</a>
-            <a href="mailto:random@mail.com" class="block-link">random@mail.com</a>
-            <p class="paragraph"> <a href="tel:+1(900)000-01-02">+1(900)000-01-02</a>
-            </p>
-        </li>
-        <li>
-            <a href="contacts.html" class="block-link">Another site (but realy not)</a>
-            <a href="mailto:example@mail.com" class="block-link">example@mail.com</a>
-            <p class="paragraph"><a href="tel:+1(900)000-01-03">+1(900)000-01-03</a></p>
-        </li>
-    </ul>
-    <h4 class="title_2">Send us message</h4>
-    <form action="#">
-        <div>
-            <label for="name"> Full name</label>
-            <input class="input" type="text" id="name">
+
+
+
+    <div class="content">
+        <div class="content-contacts">
+            <img src="./images/cover.jpg" alt="World and Peace">
+            <h4 class="title_2">Address</h4>
+            <p class="paragraph">Lorem, ipsum.</p>
+            <h4 class="title_2">Phone</h4>
+            <ul>
+                <li><a href="tel:+1(900)000-01-02">+1(900)000-01-02</a></li>
+                <li><a href="tel:+1(900)000-01-03">+1(900)000-01-03</a></li>
+            </ul>
+            <h4 class="title_2">Online service</h4>
+            <ul>
+                <li>
+                    <a href="index.html" class="block-link">Some site</a>
+                </li>
+                <li>
+                    <a href="mailto:example@mail.com" class="block-link">example@mail.com</a>
+                </li>
+            </ul>
         </div>
-        <div>
-            <label for="email">Email</label>
-            <input class="input" type="email" id="email">
+
+
+        <div class="contact-form">
+            <h4 class="title_2">Send us message</h4>
+            <form action="#">
+                <div>
+                    <label for="name"> Full name</label>
+                    <input class="input" type="text" id="name">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input class="input" type="email" id="email">
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea class="input" name="" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <button class="button" type="submit">Submit</button>
+            </form>
         </div>
-        <div>
-            <label for="message">Message</label>
-            <textarea class="input" name="" id="message" cols="30" rows="10"></textarea>
+
+
+        <div class="map">
+            <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс.Карты</a><a href="https://yandex.ru/maps/?ll=-25.450696%2C37.371667&utm_medium=mapframe&utm_source=maps&z=8.04"
+                    style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUMySxshC" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+
         </div>
-        <button class="button" type="submit">Submit</button>
-    </form>
-    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс.Карты</a><a href="https://yandex.ru/maps/?ll=-25.450696%2C37.371667&utm_medium=mapframe&utm_source=maps&z=8.04"
-            style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUMySxshC" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+    </div>
+
+
+
     <footer>
-        <h3 class="title">Capter III</h3>
-        <!-- Цитата: "Заголовку h3 создать класс и задать стили:"-->
-        <p class="paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </p>
+        <div class="footer-content">
+            <div class="footer-text">
+                <h3 class="title">Capter III</h3>
+                <p class="paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+        </div>
         <hr>
-        <ul>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li><a href="tel:+1(900)000-01-02">+1(900)000-01-02</a></li>
-            <li><a href="mailto:example@mail.com"> example@mail.com</a></li>
-        </ul>
-        <p class="paragraph">
-            &copy; All right reserved
-        </p>
+
+
+        <div class="footer-contacts">
+            <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li><a href="tel:+1(900)000-01-02">+1(900)000-01-02</a></li>
+                <li><a href="mailto:example@mail.com"> example@mail.com</a></li>
+            </ul>
+
+
+            <div class="copyright">
+                <p class="paragraph">
+                    &copy; All right reserved
+                </p>
+            </div>
+        </div>
     </footer>
 </body>
 
